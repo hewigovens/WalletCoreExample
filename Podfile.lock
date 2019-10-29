@@ -1,0 +1,20 @@
+PODS:
+  - SwiftProtobuf (1.5.0)
+  - TrustWalletCore (0.12.25):
+    - SwiftProtobuf (~> 1.5.0)
+
+DEPENDENCIES:
+  - TrustWalletCore (~> 0.12.25)
+
+SPEC REPOS:
+  trunk:
+    - SwiftProtobuf
+    - TrustWalletCore
+
+SPEC CHECKSUMS:
+  SwiftProtobuf: 241400280f912735c1e1b9fe675fdd2c6c4d42e2
+  TrustWalletCore: c5e7f4c875b9e68203ee2b0312272dd7dd32ce98
+
+PODFILE CHECKSUM: 06ec2f97dbb0f88f8f8192ddc21dbecafd850e4e
+
+COCOAPODS: 1.8.4

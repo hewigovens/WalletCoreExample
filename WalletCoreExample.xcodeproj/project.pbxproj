@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B43E86CFA703049CB2B377E /* Pods_WalletCoreExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D939E351D048A3DB4DF96D /* Pods_WalletCoreExample.framework */; };
 		BB7561EA23681EE400E4A891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7561E923681EE400E4A891 /* AppDelegate.swift */; };
 		BB7561EC23681EE400E4A891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7561EB23681EE400E4A891 /* ViewController.swift */; };
 		BB7561EE23681EE600E4A891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7561ED23681EE600E4A891 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17D939E351D048A3DB4DF96D /* Pods_WalletCoreExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletCoreExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F017702CD0538F7214E0F41 /* Pods-WalletCoreExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCoreExample.release.xcconfig"; path = "Target Support Files/Pods-WalletCoreExample/Pods-WalletCoreExample.release.xcconfig"; sourceTree = "<group>"; };
+		A4A7906E4A2394D9ED105739 /* Pods-WalletCoreExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletCoreExample.debug.xcconfig"; path = "Target Support Files/Pods-WalletCoreExample/Pods-WalletCoreExample.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7561E623681EE400E4A891 /* WalletCoreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletCoreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7561E923681EE400E4A891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7561EB23681EE400E4A891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,17 +32,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B43E86CFA703049CB2B377E /* Pods_WalletCoreExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E789B7AB7D8C6C9D62647D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7906E4A2394D9ED105739 /* Pods-WalletCoreExample.debug.xcconfig */,
+				1F017702CD0538F7214E0F41 /* Pods-WalletCoreExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BB7561DD23681EE400E4A891 = {
 			isa = PBXGroup;
 			children = (
 				BB7561E823681EE400E4A891 /* WalletCoreExample */,
 				BB7561E723681EE400E4A891 /* Products */,
+				9E789B7AB7D8C6C9D62647D2 /* Pods */,
+				E986E0CCDB4256160F1E0697 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +80,14 @@
 			path = WalletCoreExample;
 			sourceTree = "<group>";
 		};
+		E986E0CCDB4256160F1E0697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17D939E351D048A3DB4DF96D /* Pods_WalletCoreExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB7561F623681EE600E4A891 /* Build configuration list for PBXNativeTarget "WalletCoreExample" */;
 			buildPhases = (
+				92FEBF01429D50F74F546E9D /* [CP] Check Pods Manifest.lock */,
 				BB7561E223681EE400E4A891 /* Sources */,
 				BB7561E323681EE400E4A891 /* Frameworks */,
 				BB7561E423681EE400E4A891 /* Resources */,
+				3732F605898D2D4249382540 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3732F605898D2D4249382540 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletCoreExample/Pods-WalletCoreExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletCoreExample/Pods-WalletCoreExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WalletCoreExample/Pods-WalletCoreExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92FEBF01429D50F74F546E9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletCoreExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB7561E223681EE400E4A891 /* Sources */ = {
@@ -267,6 +336,7 @@
 		};
 		BB7561F723681EE600E4A891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A7906E4A2394D9ED105739 /* Pods-WalletCoreExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WalletCoreExample/WalletCoreExample.entitlements;
@@ -285,6 +355,7 @@
 		};
 		BB7561F823681EE600E4A891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F017702CD0538F7214E0F41 /* Pods-WalletCoreExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WalletCoreExample/WalletCoreExample.entitlements;

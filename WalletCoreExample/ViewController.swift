@@ -7,13 +7,22 @@
 //
 
 import Cocoa
+import TrustWalletCore
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let wallet = HDWallet(strength: 128, passphrase: "")
+        print(wallet.mnemonic)
+        let key = wallet.getKeyForCoin(coin: .ethereum)
+        let address = CoinType.ethereum.deriveAddress(privateKey: key)
+        print(address)
+
+        let msg = "hello".data(using: .utf8)!
+        let sig = key.sign(digest: Hash.keccak256(data: msg), curve: .secp256k1)!
+        print(sig.hexString)
     }
 
     override var representedObject: Any? {
@@ -21,7 +30,4 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
-
