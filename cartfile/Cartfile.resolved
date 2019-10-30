@@ -1,0 +1,2 @@
+github "apple/swift-protobuf" "1.7.0"
+github "hewigovens/wallet-core-carthage" "1c05d48ceef896be77ad63bacf237209b9e004b7"
