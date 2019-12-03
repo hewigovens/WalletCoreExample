@@ -1,3 +1,5 @@
 *~
 Pods/
 Carthage/
+# temp disable spm/
+spm/
